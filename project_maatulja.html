@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Maa Tulja Foundation - Project Details{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="{{ url_for('static', filename='images/maatulja.png') }}" alt="Maa Tulja Foundation" class="img-fluid rounded shadow" style="max-width: 180px;">
+        </div>
+        <div class="col-md-8">
+            <h1 class="mb-2">NGO Website for Maa Tulja Foundation</h1>
+            <p class="lead">Designed and developed a dynamic, fully responsive website for Maa Tulja Foundation, empowering communities through health, education, and environmental care.</p>
+            <ul class="list-unstyled">
+                <li><strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL</li>
+                <li><strong>Duration:</strong> May 15 - June 30, 2025</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mb-4">
+        <h3 class="section-title"><i class="fas fa-images"></i> Project Gallery</h3>
+        <div class="row g-3">
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/maatulja1.jpg') }}" alt="Maa Tulja Foundation Event 1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/maatulja2.jpg') }}" alt="Maa Tulja Foundation Event 2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/maatulja3.jpg') }}" alt="Maa Tulja Foundation Event 3" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="section-title"><i class="fas fa-info-circle"></i> About the Project</h3>
+        <p>
+            The Maa Tulja Foundation website was built to provide a digital presence for the NGO, enabling them to share their mission, showcase events, accept donations, and manage registrations. The site features a modern admin panel, analytics dashboards, and is optimized for both desktop and mobile users.
+        </p>
+        <ul>
+            <li>Donation and registration analytics with interactive charts</li>
+            <li>Admin panel for content management</li>
+            <li>Responsive design for all devices</li>
+            <li>Enhanced user experience and trust</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 

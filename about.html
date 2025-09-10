@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}About - Meetkumar Kanani{% endblock %}
+{% block content %}
+<div class="container about-content mt-5 mb-5">
+    <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="{{ url_for('static', filename='images/your-photo.png') }}" alt="Meetkumar Kanani" class="img-fluid rounded-circle shadow" style="max-width: 220px; border: 6px solid #fff; box-shadow: 0 4px 24px rgba(102,126,234,0.15);">
+        </div>
+        <div class="col-md-8">
+            <h1 class="mb-3">Meetkumar Kanani</h1>
+            <h4 class="text-primary mb-3">Data Scientist & Python Developer</h4>
+            <p class="lead">Passionate and driven Computer Science graduate with hands-on experience in Python development, data analysis, web development (including full-stack projects with admin panels), and business intelligence tools like Power BI. Eager to bring my technical skills, creativity, and problem-solving mindset to a dynamic team, building impactful solutions that make a real-world difference.</p>
+            <ul class="list-unstyled mt-4">
+                <li><i class="fas fa-graduation-cap text-primary"></i> <strong>Education:</strong> B.Tech in Computer Science (AI & ML), P. P. Savani University</li>
+                <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Location:</strong> Surat, Gujarat, India</li>
+                <li><i class="fas fa-envelope text-primary"></i> <strong>Email:</strong> Kananimeet34@gmail.com</li>
+                <li><i class="fab fa-linkedin text-primary"></i> <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/meetkumar-kanani-9753b326a" target="_blank">meetkumar-kanani-9753b326a</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="about-section">
+                <h3 class="section-title"><i class="fas fa-user"></i> About Me</h3>
+                <p>I am passionate about continuous learning and exploring emerging technologies in Artificial Intelligence and Machine Learning. I enjoy solving real-world problems with code, collaborating with teams, and building solutions that make a difference. My journey includes developing blockchain voting systems, eCommerce platforms with AI chatbots, and business intelligence dashboards.</p>
+                <p>Outside of tech, I value creativity, communication, and a growth mindset. I am always eager to take on new challenges and contribute to innovative projects.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="about-section">
+                <h3 class="section-title"><i class="fas fa-tools"></i> Skills & Tools</h3>
+                <div class="skills-grid">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Flask</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">PHP</span>
+                    <span class="skill-item">MySQL</span>
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">Tableau</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">PyCharm</span>
+                    <span class="skill-item">Spyder</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Android Studio</span>
+                    <span class="skill-item">Critical Thinking</span>
+                    <span class="skill-item">Digital Marketing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="about-section">
+                <h3 class="section-title"><i class="fas fa-bullseye"></i> My Values & Goals</h3>
+                <p>I believe in the power of technology to transform lives and businesses. My goal is to leverage my skills in data science, software development, and business intelligence to create solutions that are impactful, ethical, and user-centric. I am looking forward to joining a team where I can grow, contribute, and make a positive difference.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

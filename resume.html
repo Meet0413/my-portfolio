@@ -1,0 +1,383 @@
+{% extends 'base.html' %}
+{% block title %}Resume - Meetkumar Kanani{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="resume-header text-center mb-5">
+        <h1 class="resume-title">Meetkumar Kanani</h1>
+        <p class="resume-subtitle">Data Scientist & Python Developer</p>
+        <div class="resume-contact">
+            <p><i class="fas fa-envelope"></i> Kananimeet34@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 9106342091</p>
+            <p><i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India</p>
+            <p><i class="fab fa-linkedin"></i> <a href="http://www.linkedin.com/in/meetkumar-kanani-9753b326a" target="_blank">LinkedIn Profile</a></p>
+        </div>
+        <div class="resume-download">
+            <a href="{{ url_for('uploaded_file', filename='Kanani Meetkumar.pdf') }}" class="btn btn-primary" download>
+                <i class="fas fa-download"></i> Download PDF Resume
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Professional Summary -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
+                <div class="resume-content">
+                    <p>Passionate and driven Computer Science graduate with hands-on experience in Python development, data analysis, web development (including full-stack projects with admin panels), and business intelligence tools like Power BI. Eager to bring my technical skills, creativity, and problem-solving mindset to a dynamic team, building impactful solutions that make a real-world difference.</p>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="resume-content">
+                    <div class="experience-item">
+                        <h3>Python Developer Intern</h3>
+                        <p class="company">Enlighten Infosystems</p>
+                        <p class="duration"><i class="fas fa-calendar"></i> 4th Dec, 2023 - 30th April, 2023 (5 months)</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Neptune Tower, Alakapuri Road, Vadodara, Gujarat</p>
+                        <ul class="responsibilities">
+                            <li>Developed and maintained Python applications</li>
+                            <li>Collaborated with the development team to design and implement new features</li>
+                            <li>Assisted in data analysis tasks using Python libraries</li>
+                            <li>Enhanced existing code for better performance and scalability</li>
+                            <li>Worked on multiple projects including Menu-Driven Python Program, Secure Sell POS System, Customer Churn Prediction using ML Techniques, AR/VR Applications, Placement Prediction, and Customer Buying Behavior Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projects</h2>
+                <div class="resume-content">
+                    <div class="project-item">
+                        <h3>Block-Chain Voting System</h3>
+                        <p class="project-type">College Project (3rd Year)</p>
+                        <p class="project-description">Implemented a blockchain-based voting system that offers increased transparency, security, and trust in the election process, ensuring immutable and auditable records of votes while reducing the risk of fraud and unauthorized access.</p>
+                        <p class="tech-used"><strong>Technologies:</strong> Block-Chain platform, VS Code, React-native JS (Framework)</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Ecommerce Website with AI Chatbot</h3>
+                        <p class="project-type">College Project (4th Year)</p>
+                        <p class="project-description">Developed a comprehensive eCommerce website featuring AI-powered chatbots for enhanced customer support, product recommendations for personalization, and customer analytics for valuable insights, resulting in increased customer satisfaction and sales.</p>
+                        <p class="tech-used"><strong>Technologies:</strong> Spyder, VS Code, MySQL, Figma</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>NGO Website for Maa Tulja Foundation</h3>
+                        <p class="project-type">Freelance Project (May 15 - June 30, 2025)</p>
+                        <p class="project-description">Designed and developed a dynamic, fully responsive website optimized for both desktop and mobile browsers. Built an advanced admin panel enabling complete content management, along with donation and registration analytics visualized through interactive charts.</p>
+                        <p class="tech-used"><strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Hardware Website for Osial Hardware Co.</h3>
+                        <p class="project-type">Freelance Project (May 5 - June 2, 2025)</p>
+                        <p class="project-description">Built a fully responsive, professional website to showcase products and services, optimized seamlessly for desktop and mobile browsers. Developed with a robust backend and slick, dynamic frontend with admin panel for full content management.</p>
+                        <p class="tech-used"><strong>Technologies:</strong> Flask (Python), PHP, HTML, CSS, JavaScript, MySQL</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>YourDeal Affiliate Marketing Website</h3>
+                        <p class="project-type">Freelance Project</p>
+                        <p class="project-description">Designed and developed a fully responsive affiliate marketing website with dynamic product showcase pages, affiliate tracking, and a clean, user-friendly interface. Built an admin panel to manage product listings, analyze user clicks and conversions.</p>
+                        <p class="tech-used"><strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL, Flask</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <!-- Education -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="resume-content">
+                    <div class="education-item">
+                        <h3>B.Tech in Computer Science</h3>
+                        <p class="specialization">Specialization in Artificial Intelligence and Machine Learning</p>
+                        <p class="institution">P. P. Savani University</p>
+                        <p class="cgpa">CGPA: 7.53</p>
+                        <p class="location">Dhamdod, Surat, Gujarat, India</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h2>
+                <div class="resume-content">
+                    <div class="skills-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Web Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Data Analysis Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Tableau</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Software & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">PyCharm</span>
+                            <span class="skill-tag">Spyder</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Android Studio</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Other Skills</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Critical Thinking</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="resume-section">
+                <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="resume-content">
+                    <div class="certification-item">
+                        <h4>Business Intelligence</h4>
+                        <p class="cert-details">The insight path of data & Decisions: Dashboards and Reports</p>
+                        <p class="cert-institution">Coursera</p>
+                        <p class="cert-duration">May 16, 2023 - Aug 5, 2023</p>
+                    </div>
+
+                    <div class="certification-item">
+                        <h4>Block-Chain</h4>
+                        <p class="cert-details">Block-Chain Fundamentals</p>
+                        <p class="cert-institution">Cognitive Class.ai</p>
+                        <p class="cert-duration">Apr 3, 2022 - Jun 29, 2022</p>
+                    </div>
+
+                    <div class="certification-item">
+                        <h4>Business Analyst with Tableau</h4>
+                        <p class="cert-details">Data Visualization and Analytics</p>
+                        <p class="cert-institution">Udemy</p>
+                        <p class="cert-duration">Mar 5, 2023 - Apr 10, 2023</p>
+                    </div>
+
+                    <div class="certification-item">
+                        <h4>Digital Marketing</h4>
+                        <p class="cert-details">Digital Marketing Fundamentals</p>
+                        <p class="cert-institution">Google</p>
+                        <p class="cert-duration">Aug 15, 2021 - Sep 21, 2021</p>
+                    </div>
+
+                    <div class="certification-item">
+                        <h4>Deep Learning</h4>
+                        <p class="cert-details">Neural Networks and Deep Learning</p>
+                        <p class="cert-institution">Coursera</p>
+                        <p class="cert-duration">Nov 15, 2023 - Jan 27, 2024</p>
+                    </div>
+
+                    <div class="certification-item">
+                        <h4>IBM Cybersecurity Analyst</h4>
+                        <p class="cert-details">Cybersecurity Fundamentals</p>
+                        <p class="cert-institution">Coursera</p>
+                        <p class="cert-duration">Nov 2, 2023 - Jan 29, 2024</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+.resume-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resume-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resume-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.resume-contact {
+    margin-bottom: 25px;
+}
+
+.resume-contact p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.resume-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume-contact a:hover {
+    text-decoration: underline;
+}
+
+.resume-download .btn {
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.resume-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #667eea;
+}
+
+.section-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title i {
+    color: #667eea;
+}
+
+.experience-item, .project-item, .education-item, .certification-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item:last-child, .project-item:last-child, .education-item:last-child, .certification-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-item h3, .project-item h3, .education-item h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.company, .project-type, .specialization, .cert-details {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.duration, .location, .tech-used, .institution, .cgpa, .cert-institution, .cert-duration {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.responsibilities {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.responsibilities li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-description {
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h4 {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+    .resume-title {
+        font-size: 2rem;
+    }
+    
+    .resume-section {
+        padding: 20px;
+    }
+    
+    .skill-tags {
+        gap: 6px;
+    }
+    
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+</style>
+{% endblock %} 

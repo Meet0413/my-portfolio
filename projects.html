@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% block title %}Projects - My Portfolio{% endblock %}
+{% block content %}
+<div class="container projects-page">
+    <h1 class="text-center mb-5">My Projects</h1>
+    
+    <!-- College Projects -->
+    <section class="mb-5">
+        <h2 class="section-title">College Projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <img src="{{ url_for('static', filename='images/blockchain.png') }}" alt="Blockchain Voting System" style="height:60px;">
+                    </div>
+                    <h3>Block-Chain Voting System</h3>
+                    <p class="project-description">
+                        A major project developed in 3rd year implementing a blockchain-based voting system that offers increased transparency, security, and trust in the election process. The system ensures immutable and auditable records of votes while reducing the risk of fraud and unauthorized access.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Block-Chain platform, VS Code, React-native JS (Framework)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <img src="{{ url_for('static', filename='images/ecommerce.png') }}" alt="Ecommerce Website with AI Chatbot" style="height:60px;">
+                    </div>
+                    <h3>Ecommerce Website with AI Chatbot</h3>
+                    <p class="project-description">
+                        A comprehensive eCommerce website developed in 4th year featuring AI-powered chatbots for enhanced customer support, product recommendations for personalization, and customer analytics for valuable insights, resulting in increased customer satisfaction and sales.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Spyder, VS Code, MySQL, Figma
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelance Projects -->
+    <section class="mb-5">
+        <h2 class="section-title">Freelance & Independent Projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h3>NGO Website for Maa Tulja Foundation</h3>
+                    <p class="project-description">
+                        Designed and developed a dynamic, fully responsive website optimized for both desktop and mobile browsers. Built an advanced admin panel enabling complete content management, along with donation and registration analytics visualized through interactive charts.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL
+                    </div>
+                    <div class="project-duration">
+                        <strong>Duration:</strong> May 15 - June 30, 2025
+                    </div>
+                    <a href="/project/maatulja" class="btn btn-outline-primary mt-2 btn-view-more">View More</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h3>Hardware Website for Osial Hardware Co.</h3>
+                    <p class="project-description">
+                        Built a fully responsive, professional website to showcase products and services, optimized seamlessly for desktop and mobile browsers. Developed with a robust backend and slick, dynamic frontend with admin panel for full content management.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Flask (Python), PHP, HTML, CSS, JavaScript, MySQL
+                    </div>
+                    <div class="project-duration">
+                        <strong>Duration:</strong> May 5 - June 2, 2025
+                    </div>
+                    <a href="/project/hardware" class="btn btn-outline-primary mt-2 btn-view-more">View More</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h3>YourDeal Affiliate Marketing Website</h3>
+                    <p class="project-description">
+                        Designed and developed a fully responsive affiliate marketing website with dynamic product showcase pages, affiliate tracking, and a clean, user-friendly interface. Built an admin panel to manage product listings, analyze user clicks and conversions.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL, Flask
+                    </div>
+                    <a href="/project/affiliate" class="btn btn-outline-primary mt-2 btn-view-more">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Projects -->
+    <section class="mb-5">
+        <h2 class="section-title">Internship Projects (Enlighten Infosystems)</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-list-alt fa-2x text-primary"></i>
+                    </div>
+                    <h3>Menu-Driven Python Program</h3>
+                    <p class="project-description">
+                        Developed a comprehensive menu-driven Python application during the internship period.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-cash-register fa-2x text-success"></i>
+                    </div>
+                    <h3>Secure Sell POS System</h3>
+                    <p class="project-description">
+                        Built a secure point-of-sale system with enhanced security features and user management.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python, Database Management
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-user-check fa-2x text-info"></i>
+                    </div>
+                    <h3>Customer Churn Prediction using ML</h3>
+                    <p class="project-description">
+                        Implemented machine learning techniques to predict customer churn and improve retention strategies.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python, Machine Learning, Data Analysis
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-vr-cardboard fa-2x text-warning"></i>
+                    </div>
+                    <h3>AR/VR Applications</h3>
+                    <p class="project-description">
+                        Developed augmented and virtual reality applications for immersive user experiences.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> AR/VR Development Tools
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-graduation-cap fa-2x text-secondary"></i>
+                    </div>
+                    <h3>Placement Prediction</h3>
+                    <p class="project-description">
+                        Created a system to predict student placement outcomes using data analysis and machine learning.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python, Machine Learning, Data Analysis
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-image text-center mb-3">
+                        <i class="fas fa-chart-pie fa-2x text-danger"></i>
+                    </div>
+                    <h3>Customer Buying Behavior Analysis</h3>
+                    <p class="project-description">
+                        Analyzed customer purchasing patterns to provide insights for business strategy and marketing decisions.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Technologies:</strong> Python, Data Analysis, Business Intelligence
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %} 

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}YourDeal Affiliate Marketing Website - Project Details{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="{{ url_for('static', filename='images/affiliate.png') }}" alt="YourDeal Affiliate Marketing Website" class="img-fluid rounded shadow" style="max-width: 180px;">
+        </div>
+        <div class="col-md-8">
+            <h1 class="mb-2">YourDeal Affiliate Marketing Website</h1>
+            <p class="lead">Designed and developed a fully responsive affiliate marketing website (YourDeal) with dynamic product showcases, affiliate tracking, and a user-friendly interface.</p>
+            <ul class="list-unstyled">
+                <li><strong>Technologies:</strong> PHP, HTML, CSS, JavaScript, MySQL, Flask</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mb-4">
+        <h3 class="section-title"><i class="fas fa-images"></i> Project Gallery</h3>
+        <div class="row g-3">
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/affiliate1.jpg') }}" alt="YourDeal Screenshot 1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/affiliate2.jpg') }}" alt="YourDeal Screenshot 2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/affiliate3.jpg') }}" alt="YourDeal Screenshot 3" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="section-title"><i class="fas fa-info-circle"></i> About the Project</h3>
+        <p>
+            YourDeal is an affiliate marketing platform that enables users to discover products, track affiliate links, and maximize monetization opportunities. The site features an admin panel for product management, analytics for user clicks and conversions, and a clean, modern design.
+        </p>
+        <ul>
+            <li>Dynamic product showcase pages</li>
+            <li>Affiliate tracking and analytics</li>
+            <li>Admin panel for product management</li>
+            <li>Responsive, user-friendly interface</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 

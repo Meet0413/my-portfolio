@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% block title %}Contact - Meetkumar Kanani{% endblock %}
+{% block content %}
+<div class="container contact-page mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 mb-4">
+            <div class="contact-section">
+                <h1 class="mb-4 text-center">Contact Me</h1>
+                <p class="text-center mb-4">Have a question, want to collaborate, or just want to say hello? Fill out the form below or reach out directly!</p>
+                <form id="contactForm" class="contact-form" method="post" action="#">
+                    <div class="form-group mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="you@email.com">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Type your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit w-100">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-5 mb-4">
+            <div class="contact-info-section">
+                <h3 class="mb-4"><i class="fas fa-address-card text-primary"></i> Contact Information</h3>
+                <ul class="contact-info-list list-unstyled">
+                    <li><i class="fas fa-envelope text-primary"></i> <strong>Email:</strong> <a href="mailto:Kananimeet34@gmail.com">Kananimeet34@gmail.com</a></li>
+                    <li><i class="fas fa-phone text-primary"></i> <strong>Phone:</strong> +91 9106342091</li>
+                    <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Location:</strong> Surat, Gujarat, India</li>
+                    <li><i class="fab fa-linkedin text-primary"></i> <strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/meetkumar-kanani-9753b326a" target="_blank">meetkumar-kanani-9753b326a</a></li>
+                </ul>
+                <div class="social-links mt-4">
+                    <a href="http://www.linkedin.com/in/meetkumar-kanani-9753b326a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:Kananimeet34@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.contact-page {
+    padding: 40px 0;
+}
+
+.contact-section {
+    background: white;
+    border-radius: 15px;
+    padding: 35px 30px 30px 30px;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.08);
+    border-left: 4px solid #667eea;
+}
+
+.contact-section h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.contact-section p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.contact-form .form-label {
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.contact-form .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
+    background: white;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.08);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(45deg, #764ba2, #667eea);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.contact-info-section {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 35px 30px 30px 30px;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.06);
+    border-left: 4px solid #764ba2;
+}
+
+.contact-info-section h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contact-info-list li {
+    color: #34495e;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info-list a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info-list a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .contact-section, .contact-info-section {
+        padding: 20px 10px;
+    }
+    .contact-section h1 {
+        font-size: 1.6rem;
+    }
+    .contact-info-section h3 {
+        font-size: 1.1rem;
+    }
+}
+</style>
+{% endblock %} 

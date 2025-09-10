@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Hardware Website - Project Details{% endblock %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img src="{{ url_for('static', filename='images/hardware.png') }}" alt="Hardware Website" class="img-fluid rounded shadow" style="max-width: 180px;">
+        </div>
+        <div class="col-md-8">
+            <h1 class="mb-2">Hardware Website for Osial Hardware Co.</h1>
+            <p class="lead">Built a fully responsive, professional website to showcase products and services for Osial Hardware Co., optimized for both desktop and mobile browsers.</p>
+            <ul class="list-unstyled">
+                <li><strong>Technologies:</strong> Flask (Python), PHP, HTML, CSS, JavaScript, MySQL</li>
+                <li><strong>Duration:</strong> May 5 - June 2, 2025</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mb-4">
+        <h3 class="section-title"><i class="fas fa-images"></i> Project Gallery</h3>
+        <div class="row g-3">
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/hardware1.jpg') }}" alt="Hardware Website Screenshot 1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/hardware2.jpg') }}" alt="Hardware Website Screenshot 2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="{{ url_for('static', filename='images/hardware3.jpg') }}" alt="Hardware Website Screenshot 3" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 class="section-title"><i class="fas fa-info-circle"></i> About the Project</h3>
+        <p>
+            The Osial Hardware Co. website was developed to provide a modern digital presence, allowing the company to showcase its products, manage content, and engage customers. The site features a robust backend, dynamic frontend, and an admin panel for easy updates.
+        </p>
+        <ul>
+            <li>Product showcase with images and details</li>
+            <li>Admin panel for content and product management</li>
+            <li>Responsive, mobile-friendly design</li>
+            <li>Improved customer engagement and brand visibility</li>
+        </ul>
+    </div>
+</div>
+{% endblock %} 
